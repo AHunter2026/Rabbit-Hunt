@@ -122,7 +122,7 @@ def send_email(
     try:
         msg = MIMEMultipart("alternative")
         msg["Subject"] = subject
-        msg["From"] = f"Rabbit Scout <{gmail_address}>"
+        msg["From"] = f"Rabbit Hunt <{gmail_address}>"
         msg["To"] = recipient
         msg.attach(MIMEText(html_body, "html"))
 
